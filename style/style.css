@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../image/nino.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CSS CHO LE TRAI VA LE PHAI */
+.left-panel, .right-panel {
+    position: fixed;
+    top: 0;
+    width: 100px;
+    height: 100vh;
+    background: rgba(201, 49, 112, 0.5); 
+}
+
+/* CSS CHO LE TRAI VA LE PHAI */
+.left-panel {
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.left-panel i {
+    font-size: 24px;
+    color: white;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: transform 0.3s, color 0.3s;
+}
+.left-panel i:hover {
+    transform: rotate(360deg);
+    color: #fff;
+}
+.right-panel {
+    right: 100px;
+}
+
+/* content box */
+.content-box {
+    position: absolute;
+    top:20px;
+    left: 220px; /* Cách icon 20px + 100px (panel) */
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Ẩn mặc định */
+}
+
+.content-box-home{
+    position: absolute;
+    top:20px;
+    left: 220px; /* Cách icon 20px + 100px (panel) */
+    width: 800px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Ẩn mặc định */
+}
