@@ -1,0 +1,50 @@
+#favorites {
+    position: relative;
+    width: 400px;
+    height: 600px;
+}
+
+.phan_tren {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dia_nhac {
+    position: relative;
+    background-image: url('../image/pic1.jpg');
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dia_nhac::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.phan_duoi {
+    width: 100%;
+    height: 250px;
+}
+
+#audio-player {
+    width: 90%;
+    background: #222;
+    border-radius: 10px;
+}

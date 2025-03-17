@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/fava.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></head>
 <body>
     <!-- Lề trái --> 
@@ -24,12 +27,65 @@
     <div class="content-box" id="message">Messages</div>
     <div class="content-box" id="settings">Settings</div>
     <div class="content-box" id="notifications">Notifications</div>
-    <div class="content-box" id="favorites">Favorites</div>
-    <div class="content-box" id="logout">Logout</div>
+    <div class="content-box" id="favorites">
+        <div class="phan_tren">
+            <div class="dia_nhac">
+            </div>
+        </div>
+        <div class="phan_duoi">
+            <div class="musicer">
+                <div class="music-player">
+                    <button id="prev-btn" class="control-btn">&#9665;</button>
+                    <button id="play-btn" class="play-btn">▶</button>
+                    <button id="next-btn" class="control-btn">&#9655;</button>
+                    <div class="track">
+                        <div class="chu">
+                            <span style="--color:#ffffff;--delay:0s">N</span>
+                            <span style="--color:#ffffff;--delay:0.25">A</span>
+                            <span style="--color:#ffffff;--delay:0.5s">K</span>
+                            <span style="--color:#ffffff;--delay:0.75s">A</span>
+                            <span style="--color:#ffffff;--delay:1s">n</span>
+                            <span style="--color:#ffffff;--delay:1.25s">O</span>
+                            <span style="--color:#ffffff;--delay:1.5s">N</span>
+                            <span style="--color:#ffffff;--delay:1.75s">I</span>
+                            <span style="--color:#ffffff;--delay:2s">N</span>
+                            <span style="--color:#ffffff;--delay:2.25s">O</span>
+                        </div>
+                        <input type="range" id="progress-bar" class="progress-bar" min="0" max="100" value="0">
+                    </div>
+                    <div class="time-container">
+                        <span id="current-time" class="time current-time">0:00</span>
+                        <span id="duration" class="time duration">0:00</span>
+                    </div>
+                </div>
+            
+                <!-- Audio file -->
+                <!-- <audio id="audio" src="AnhLuonNhuVay-BRay-11853369.mp3"></audio> -->
+                <audio id="audio"></audio>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="content-box" id="logout">Logout</div> -->
 
-    <div class="content-box-home" id="home">Home Content</div>
+    <div class="content-box-home" id="home">
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">&#9665;</button>
+                <h2 id="monthYear"></h2>
+                <button id="nextMonth">&#9655;</button>
+            </div>
+            <div class="calendar-body">
+                <div class="weekdays">
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                </div>
+                <div class="days" id="calendarDays"></div>
+            </div>
+        </div>
+    </div>
     <!-- Lề phải --> 
     <div class="right-panel"></div>
 </body>
 <script src="script/script.js"></script>
+<script src="script/home.js"></script>
+<script src="script/music.js"></script>
 </html>
