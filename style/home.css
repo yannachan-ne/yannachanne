@@ -46,3 +46,30 @@
     color: white;
     font-weight: bold;
 }
+/* Khi màn hình nhỏ hơn 1024px (tablet) */
+@media (max-width: 1024px) {
+    .calendar {
+        width: 90%; /* Chiếm 90% chiều rộng màn hình */
+        left: 5%; /* Canh giữa */
+        height: auto; /* Chiều cao tự đ��ng */
+    }
+}
+
+/* Khi màn hình nhỏ hơn 768px (mobile) */
+@media (max-width: 768px) {
+    .content-box-home {
+        width: 90%; /* Chiếm 90% chiều rộng màn hình */
+        left: 5%; /* Canh giữa */
+        height: auto; /* Chiều cao tự động */
+    }
+}
+
+/* Khi màn hình rất nhỏ (dưới 480px) */
+@media (max-width: 480px) {
+    .content-box-home {
+        width: 95%; 
+        left: 2.5%;
+        top: 10px;
+        padding: 10px;
+    }
+}
